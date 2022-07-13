@@ -1,14 +1,14 @@
-import { render, Fragment } from "preact";
-import { App } from "./app";
-import { Theme } from "./styled";
-import "./styled/reset.css";
+import { render, Fragment } from 'preact'
+import { App } from './app'
+import { ThemeProvider } from './styled'
+import './styled/reset.css'
 
 render(
   <Fragment>
-    <Theme>
+    <ThemeProvider>
       <App />
-    </Theme>
+    </ThemeProvider>
   </Fragment>,
 
-  document.getElementById("app")!
-);
+  document.getElementById('app')!
+)

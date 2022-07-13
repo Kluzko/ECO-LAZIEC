@@ -1,9 +1,18 @@
-import styled from "styled-components";
-
-const Header = styled.header`
-  color: blue;
-`;
+import styled from 'styled-components/macro'
+import { Nav } from './components/Nav/Nav'
 
 export function App() {
-  return <Header>test</Header>;
+  return (
+    <AppContainer>
+      <Nav />
+    </AppContainer>
+  )
 }
+
+const AppContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: ${({ theme }) => theme.colors.basic};
+  background-color: ${({ theme }) => theme.colors.background};
+`
