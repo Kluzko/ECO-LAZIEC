@@ -2,6 +2,7 @@ import styled from 'styled-components/macro'
 
 export const Nav = styled.nav`
   display: flex;
+  position: relative;
   margin-top: 20px;
   width: 100%;
 `
