@@ -1,4 +1,4 @@
-import { h } from 'preact'
+import { h,FunctionComponent} from 'preact'
 import styled from 'styled-components/macro'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 import Tooltip from 'rc-tooltip'
@@ -10,7 +10,7 @@ type AirQualityInfoProps = {
 
 
 // TODO: Make color change for pm values
-export const AirQualityInfo = ({pm25Value,pm50Value}:AirQualityInfoProps) => (
+export const AirQualityInfo:FunctionComponent<AirQualityInfoProps> = ({pm25Value,pm50Value}) => (
   <Tooltip placement="right"  trigger={['click','hover']} overlay={
     <TooltipContainer>
       <p>PM 2.5: {pm25Value}</p>

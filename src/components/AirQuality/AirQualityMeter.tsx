@@ -1,11 +1,8 @@
-import { h, ComponentChildren } from 'preact'
+import { h, FunctionComponent } from 'preact'
 import styled from 'styled-components/macro'
-type AirQualityMeterProps = {
-  title: string
-  children: ComponentChildren
-}
 
-export const AirQualityMeter = ({ title, children }: AirQualityMeterProps) => (
+
+export const AirQualityMeter:FunctionComponent<{title:string}> = ({ title, children }) => (
   <AirQualityMeterContiainer>
     <p class="title">{title}</p>
     <AirQualityInfoContiainer>{children}</AirQualityInfoContiainer>
