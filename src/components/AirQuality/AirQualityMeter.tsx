@@ -8,7 +8,7 @@ type AirQualityMeterProps = {
 export const AirQualityMeter = ({ title, children }: AirQualityMeterProps) => (
   <AirQualityMeterContiainer>
     <p class="title">{title}</p>
-    <div>{children}</div>
+    <AirQualityInfoContiainer>{children}</AirQualityInfoContiainer>
   </AirQualityMeterContiainer>
 )
 
@@ -22,4 +22,10 @@ const AirQualityMeterContiainer = styled.div`
     color: ${({ theme }) => theme.colors.basic};
     font-size: 22px;
   }
+`
+
+const AirQualityInfoContiainer = styled.div`
+  margin-top:10px ;
+  display: flex;
+  flex-direction: row;
 `

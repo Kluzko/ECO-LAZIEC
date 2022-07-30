@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components/macro'
 
-export const darkTheme: DefaultTheme = {
+export const darkTheme:DefaultTheme = {
   colors: {
     basic: '#cacaca',
     green: '#068137',

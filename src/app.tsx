@@ -1,12 +1,14 @@
 import styled from 'styled-components/macro'
-import { AirQualityInfo } from './components/AirQualityInfo/AirQualityInfo'
+import { AirQuality } from './components/AirQuality/AirQuality'
+import { Footer } from './components/footer/footer'
 import { Nav } from './components/Nav/Nav'
 
 export function App() {
   return (
     <AppContainer>
       <Nav />
-      <AirQualityInfo />
+      <AirQuality />
+      <Footer />
     </AppContainer>
   )
 }

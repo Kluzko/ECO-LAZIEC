@@ -3,14 +3,14 @@ import styled from 'styled-components/macro'
 import { AirQualityInWeek } from './AirQualityInWeek'
 import { AirQualityNow } from './AirQualityNow'
 
-export const AirQualityInfo = () => (
-  <AirQualityInfoContainer>
+export const AirQuality= () => (
+  <AirQualityContainer>
     <AirQualityNow />
     <AirQualityInWeek />
-  </AirQualityInfoContainer>
+  </AirQualityContainer>
 )
 
-const AirQualityInfoContainer = styled.div`
+const AirQualityContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   width: 100%;

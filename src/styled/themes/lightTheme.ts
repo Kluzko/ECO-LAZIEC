@@ -1,6 +1,6 @@
-import { DefaultTheme } from 'styled-components/macro'
+import { DefaultTheme } from "styled-components/macro";
 
-export const lightTheme: DefaultTheme = {
+export const lightTheme:DefaultTheme = {
   colors: {
     basic: '#484848',
     green: '#068137',
